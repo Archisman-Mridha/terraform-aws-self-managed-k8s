@@ -1,4 +1,4 @@
-# Self Managed k8s in AWS
+# Self managed K8s in AWS Terraform module
 
 > This Terraform module creates a self-managed Kubernetes cluster in AWS. Don't use this for production purposes!
 
@@ -13,7 +13,6 @@ Currently, this module is not flexible at all. Here are the limitations -
 - Only a single master node is created.
 - All nodes are provisioned in public subnets.
 - Ubuntu is the only supported OS.
-
 
 ## Roadmap
 
