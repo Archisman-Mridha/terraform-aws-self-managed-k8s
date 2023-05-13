@@ -24,7 +24,7 @@ resource "aws_instance" "master_node" {
       host = self.public_ip
 
       user = "ubuntu"
-      private_key = file("${path.module}/outputs/private-key.pem")
+      private_key = tls_private_key.private_key.private_key_pem
     }
 
     when = create
