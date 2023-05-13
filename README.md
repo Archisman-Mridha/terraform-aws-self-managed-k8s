@@ -1,6 +1,9 @@
 # Self managed K8s in AWS Terraform module
 
-> This Terraform module creates a self-managed Kubernetes cluster in AWS. Don't use this for production purposes!
+> This Terraform module creates a self-managed Kubernetes cluster in AWS
+> Don't use this for production purposes!
+
+You can view this module in the Terraform registry here - https://registry.terraform.io/modules/Archisman-Mridha/self-managed-k8s/aws/latest.
 
 It takes a list of availability zones (AZs) from the user and creates a public subnet in each AZ. A master node is bootstrapped in the first subnet. Then, a worker node is bootstrapped in each of the public subnets.
 
