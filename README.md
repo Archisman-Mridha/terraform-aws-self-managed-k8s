@@ -8,9 +8,9 @@ It takes a list of availability zones (AZs) from the user and creates a public s
 
 Inside the module, an **outputs** folder is created. The outputs folder contains -
 
-- *kubeconfig.yaml* file.
-- *kubeadm-join.sh* script which contains the kubeadm join command.
-- *private-key.pem* file which contains the private key required to SSH into the nodes.
+- **kubeconfig.yaml** file.
+- **kubeadm-join.sh** script which contains the kubeadm join command.
+- **private-key.pem** file which contains the private key required to SSH into the nodes.
 
 ## Limitations
 
