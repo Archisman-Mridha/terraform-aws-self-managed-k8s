@@ -1,5 +1,5 @@
 variable "project_name" {
-  default = "kubernetes-storage-with-aws-ebs-driver"
+  type = string
 }
 
 variable "aws_access_key" {
