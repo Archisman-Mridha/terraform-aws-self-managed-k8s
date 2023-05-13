@@ -6,7 +6,7 @@ You can view this module in the Terraform registry here - https://registry.terra
 
 It takes a list of availability zones (AZs) from the user and creates a public subnet in each AZ. A master node is bootstrapped in the first subnet. Then, a worker node is bootstrapped in each of the public subnets. It uses **Kubeadm** behind the scenes, to bootstrap the Kubernetes cluster.
 
-The module creates an **outputs** folder. The outputs folder contains -
+Inside the module, an **outputs** folder is generated. The outputs folder contains -
 
 - **kubeconfig.yaml** file.
 - **kubeadm-join.sh** script which contains the kubeadm join command.
