@@ -6,7 +6,8 @@ set -o nounset
 # Initialize Kubeadm
 sudo kubeadm init \
   --pod-network-cidr=192.168.0.0/16 \
-  --control-plane-endpoint $kube_api_public_endpoint:6443
+  --control-plane-endpoint $kube_api_public_endpoint:6443 \
+  --upload-certs
 
 # Placing kubeconfig file in ~/.kube/config
 mkdir -p $HOME/.kube

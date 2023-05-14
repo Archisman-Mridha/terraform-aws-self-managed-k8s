@@ -9,6 +9,10 @@ set -o errexit
 # only exit with the status of the last command in the pipeline.
 set -o pipefail
 
+# Disable swap memory
+sudo swapoff -a &&
+  sudo sed -i '/ swap / s/^/#/' /etc/fstab
+
 # Install ContainerD
 wget https://github.com/containerd/containerd/releases/download/v1.7.1/containerd-1.7.1-linux-amd64.tar.gz &&
   sudo tar Cxzvf /usr/local containerd-1.7.1-linux-amd64.tar.gz
